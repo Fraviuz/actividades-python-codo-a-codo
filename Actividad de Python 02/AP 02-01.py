@@ -3,7 +3,7 @@
 
 def mayor(num1, num2, num3):
     '''
-    Retorna el valor maximo entre tres numeros positivo sólo si éste es único, de lo contrario retorna -1.
+    Retorna el valor máximo entre tres números positivo sólo si éste es único, de lo contrario retorna -1.
     param.:
     num1: numero natural.
     num2: numero natural.
@@ -32,7 +32,7 @@ def mayor(num1, num2, num3):
         return -1
 
 '''
-Prueba de la funcion
+Prueba de la función
 
 print(mayor(1, 1, 1)) #-1
 print(mayor(0, 1, 1)) #-1
@@ -43,22 +43,22 @@ print(mayor(0, 1, 0)) # 1
 print(mayor(0, 0, 1)) # 1
 '''
 
-#Se pide en consola los 3 números asiganados a primerNumero, segundoNumero y tercerNumero
+#Se pide en consola los 3 números asignados a primerNumero, segundoNumero y tercerNumero
 
 print('Ingresar 3 números positivos')
 primerNumero = int(input('Escriba el primer número:'))
 segundoNumero = int(input('Escriba el segundo número:'))
 tercerNumero = int(input('Escriba el tercer número:'))
 
-#Cotrol de que los números sean positivos
+#Control de que los números sean positivos
 
 while primerNumero < 0 or segundoNumero < 0 or tercerNumero < 0:
-    print('Alguno de los 3 números no es valido, porfavor ingresar 3 números positivos (ejemplo.: 1, 5 y 7')
+    print('Alguno de los 3 números no es valido, por favor ingresar 3 números positivos (ejemplo.: 1, 5 y 7')
     primerNumero = int(input('Escriba el primer número:'))
     segundoNumero = int(input('Escriba el segundo número:'))
     tercerNumero = int(input('Escriba el tercer número:'))
 
-#Se asigna el resultado de la funcion en 'resultado'
+#Se asigna el resultado de la función en 'resultado'
 
 resultado = mayor(primerNumero, segundoNumero, tercerNumero)
 

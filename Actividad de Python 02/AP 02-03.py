@@ -43,4 +43,4 @@ def cambio(total, recibido):
 
         print(cambioPrint)
 
-#Hay ina manera mas facil de hacer esto èro luego lo hago y agrego comentarios
+#Hay ina manera mas fácil de hacer esto èro luego lo hago y agrego comentarios

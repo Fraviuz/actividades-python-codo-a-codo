@@ -125,7 +125,7 @@ for x in range(1, numero):
 numero = int(input('Escriba un número:'))
 primoIndex = 0  
 
-#primoIndex es usado para registrar cada vez que se encuentre un divisor en el loop, si es primo va ser igual a 1 con la unica excepcion siendo 1.
+#primoIndex es usado para registrar cada vez que se encuentre un divisor en el loop, si es primo va ser igual a 1 con la única excepción siendo 1.
 
 for x in range(1, numero):
     if numero % x == 0:
@@ -150,12 +150,12 @@ else :
 '''
 nota = int(input('Escriba la nota:'))
 
-# While para hacer control de la nota entreagada y pedir una nota valida
+# While para hacer control de la nota entregada y pedir una nota valida
 
 while nota > 10 or nota < 0:
-    nota = int(input('La nota ingresada no es valida, porfavor ingresar una nota valida (entre 0 y 10):'))
+    nota = int(input('La nota ingresada no es valida, por favor ingresar una nota valida (entre 0 y 10):'))
 
-#no es claro cules son las notas correspondientes asi que tome prioridad nota mayores (Ej. 9 es Sobresaliente y no Notable)
+#no es claro cuales son las notas correspondientes asi que tome prioridad nota mayores (Ej. 9 es Sobresaliente y no Notable)
 
 if nota > 8:
     print('Sobresaliente')
@@ -177,7 +177,7 @@ else :
 #333...
 
 '''
-#Se crea un loop para pasar por todos los números del 1 al 30, output es usado para guardar los numeros para luego ser mostrados. Luedo de crea otro loop para guardar en output el número en igual cantidad que dicho número
+#Se crea un loop para pasar por todos los números del 1 al 30, output es usado para guardar los números para luego ser mostrados. Luego de crea otro loop para guardar en output el número en igual cantidad que dicho número
 
 for i in range(1,31):
     output = ''
@@ -192,12 +192,12 @@ for i in range(1,31):
 #1
 
 '''
-#El codigo es similar  la actividad anterior con dos diferencias, Se pide por un número positivo y se hace control, luego ese numero (piramideNum) es usado en el range para definir el limite. Se le da otros parametros a range() para revertir el orden
+#El código es similar  la actividad anterior con dos diferencias, Se pide por un número positivo y se hace control, luego ese numero (piramideNum) es usado en el range para definir el limite. Se le da otros parámetros a range() para revertir el orden
 
 piramideNum = int(input('Escriba un número positivo:'))
 
 while piramideNum < 0:
-    piramideNum = int(input('El número ingresado ne es positivo, porfavor ingrese un número valido:'))
+    piramideNum = int(input('El número ingresado ne es positivo, por favor ingrese un número valido:'))
 
 for i in range(piramideNum,0,-1):
     output = ''
@@ -227,7 +227,7 @@ for i in range(1,501):
 
     print(output)
 
-    #Cada 5 lineas (multiplo de 5) se muestra una linea de separacion
+    #Cada 5 lineas (múltiplo de 5) se muestra una linea de separación
 
     if i % 5 == 0:
         print('------------------------------------------------------------')
