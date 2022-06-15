@@ -2,6 +2,13 @@
 
 def cambio(total, recibido):
 
+    '''
+    Muestra en consola el cambio a entregar dividido en billetes de mayor a menor denominación.
+    param.:
+    total: Total de la compra.
+    recibido: Monto recibido.
+    '''
+
     cambioTotal = recibido-total
     billetes = 0
     cambioPrint = f'La compra es de ${total} y se abono ${recibido}, el vuelto debe contener: '
@@ -43,4 +50,9 @@ def cambio(total, recibido):
 
         print(cambioPrint)
 
-#Hay ina manera mas fácil de hacer esto èro luego lo hago y agrego comentarios
+totalIngresado = int(input('Ingrese el total de la compra: '))
+recibidoIngresado = int(input('Ingrese el dinero recibido: '))
+
+cambio(totalIngresado,recibidoIngresado)
+
+#Hay ina manera mas fácil de hacer esto pero luego lo hago (trabajar diferencia como una lista)
