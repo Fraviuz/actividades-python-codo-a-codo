@@ -14,11 +14,21 @@
 **********
 '''
 
-def starPrintLines(cantidad):
+def star_print_lineas(cantidad):
+    '''
+    Imprime parámetro cantidad de lineas con este formato ********** en consola.
+    param:.
+    cantidad: Número de lineas a imprimir.
+    '''
     for i in range(cantidad):
         print('**********')
 
-def starPrintPiramide(cantidad):
+def star_print_escalera(cantidad):
+    '''
+    Imprime parámetro cantidad de lineas donde cada linea aumenta el formato a imprimir agregando ** al final.
+    param:.
+    cantidad: Número de lineas a imprimir.
+    '''
     for i in range(cantidad):
         lineaPrint = ''
         sets = i
@@ -27,7 +37,7 @@ def starPrintPiramide(cantidad):
             lineaPrint = f'{lineaPrint}**'
         print(lineaPrint)
 
-starPrintLines(5)
-starPrintPiramide(5)
+star_print_lineas(5)
+star_print_escalera(5)
 
 

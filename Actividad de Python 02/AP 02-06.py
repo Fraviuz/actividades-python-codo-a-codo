@@ -3,6 +3,7 @@
 es_par = lambda a : True if (a % 2 == 0) else False
 
 numero_ingresado = int(input('Ingresa número a chequear:'))
+
 if es_par(numero_ingresado):
     print('Es par')
 else:
