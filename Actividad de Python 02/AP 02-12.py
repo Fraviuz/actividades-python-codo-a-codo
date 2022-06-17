@@ -1,6 +1,4 @@
-#02 Desarrollar una función que reciba tres números enteros positivos y verifique si corresponden a una fecha válida (día, mes, año). Devolver True o False según la fecha sea correcta o no. Realizar también un programa para verificar el comportamiento de la función.
-
-#Esta actividad es un poco abierta a interpretación, por lo tanto voy a aclarar esos detalles aquí. Año solo números positivos, Mes entre 1 y 12, día es el que va tener el mayor trabajo, hay que identificar la cantidad a base del mes y si es el año bisiesto o no.
+#12 Escribir una función que reciba como parámetro una tupla conteniendo una fecha (día,mes,año) y devuelva una cadena de caracteres con la misma fecha expresada en formato extendido. Por ejemplo, para (12, 10,17) devuelve “12 de Octubre de 2017”. Escribir también un programa para verificar su comportamiento. 
 
 def esFecha(dia, mes, año):
 
@@ -41,13 +39,29 @@ def esFecha(dia, mes, año):
 
     return esValido
 
+def fecha_larga(fecha_tupla):
+    '''
+    Retorna cadena con fecha en formato largo.
+    param:.
+    fecha_tupla: Tupla con números correspondientes al dia, mes y año.
+    '''
 
-print('Ingrese la fecha a comprobar')
-diaEntregado = int(input('Escriba el número del día:'))
-mesEntregado = int(input('Escriba el número del mes:'))
-añoEntregado = int(input('Escriba el número del año:'))
+    meses = ('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre')
 
-if esFecha(diaEntregado,mesEntregado,añoEntregado):
-    print(f'La fecha {diaEntregado}/{mesEntregado}/{añoEntregado} Es Valida')
-else:
-    print(f'La fecha {diaEntregado}/{mesEntregado}/{añoEntregado} No es Valida')
+    dia = fecha_tupla[0]
+    mes = fecha_tupla[1]
+    año = 2000 + fecha_tupla[2]
+
+    if esFecha(dia, mes, año):
+        fecha = f'{str(dia)} de {str(meses[mes-1])} de {str(año)}'
+        return fecha
+    else:
+        return 'Fecha ingresada en Tupla no es valida'
+
+fecha_1 = (17, 6, 22)
+fecha_2 = (21, 2, 18)
+fecha_3 = (31, 6, 10)
+
+print(fecha_larga(fecha_1))
+print(fecha_larga(fecha_2))
+print(fecha_larga(fecha_3))
