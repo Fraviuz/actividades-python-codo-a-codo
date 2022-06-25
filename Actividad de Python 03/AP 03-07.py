@@ -5,6 +5,13 @@ class Triangulo:
     import math
 
     def __init__(self, lado_a, lado_b, lado_c):
+        '''
+        Inicializa una instancia del objeto Triangulo, la suma de des lados siempre tiene que ser mayor que el lado faltante para ser valido.
+        pram:.
+        lado_a: número mayor de 0.
+        lado_b: número mayor de 0.
+        lado_c: número mayor de 0.
+        '''
         self.lado_a = lado_a
         self.lado_b = lado_b
         self.lado_c = lado_c
@@ -47,3 +54,4 @@ print(triangulo_prueba)
 triangulo_prueba.mayor_lado()
 triangulo_prueba.tipo_de_triangulo()
     
+#Crear función es_valido() para controlar cuando se inicializa un triangulo al igual que vero como hacer control cuando se inicie una clase.
