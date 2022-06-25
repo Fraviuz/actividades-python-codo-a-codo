@@ -11,6 +11,12 @@
 class Persona:
 
     def __init__(self, nombre, edad):
+        '''
+        Inicializa una instancia de la clase Persona.
+        para:.
+        nombre: Cadena con el nombre de la persona.
+        edad: Número positivo que representa la edad de la persona.
+        '''
         self.nombre = nombre
         self.edad = edad
 
