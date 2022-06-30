@@ -69,7 +69,7 @@ class Agenda:
 
 test_agenda = Agenda()
 
-#Menu en consola
+#Menu en consola (incorporar dentro de la clase Agenda)
 numero_ingresado = -1
 while numero_ingresado != 0:
     print('--------------------------------')
