@@ -9,8 +9,10 @@ def agregar_una_vez(lista, el):
         lista.append(el)
 
 
-lista = ['test', 2]
-agregar_una_vez(lista, 3)
-agregar_una_vez(lista, 'testy')
-agregar_una_vez(lista, 2)
-print(lista)
+elementos = ['test', 2]
+
+agregar_una_vez(elementos, 3)
+agregar_una_vez(elementos, 'testy')
+agregar_una_vez(elementos, 2)
+
+print(elementos)
